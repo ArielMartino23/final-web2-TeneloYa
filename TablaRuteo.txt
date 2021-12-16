@@ -1,0 +1,19 @@
+I. Como usuario quiero poder ver la lista de reseñas para una empresa
+(GET) /api/valoracion/empresa/:ID
+ApiValoracionController.php
+getResenasPorEmpresa(); //$params[:ID]
+
+II. Como usuario quiero poder editar una reseña realizada por mi
+(PUT) /api/valoracion/:ID
+ApiValoracionController.php
+editarValoracionPropia();
+
+III. Como usuario quiero agregar una reseña a una empresa
+(POST) /api/valoracion
+ApiValoracionController.php
+agregarResena();
+
+IV. Como administrador quiero poder eliminar una reseña
+(DELETE) /api/valoracion/:ID
+ApiValoracionController.php
+deleteResena();
